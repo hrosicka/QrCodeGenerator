@@ -1,0 +1,18 @@
+import qrcode
+
+# Data, která chceme zakódovat
+data = "https://github.com/hrosicka"
+
+# Vytvoření QR kódu
+qr = qrcode.QRCode(
+    version=1,
+    error_correction=qrcode.constants.ERROR_CORRECT_L,
+    box_size=10,
+    border=4,
+)
+qr.add_data(data)
+qr.make(fit=True)
+
+# Uložení QR kódu do souboru
+img = qr.make_image(fill_color="black", back_color="white")
+img.save("qr_kod.png")
