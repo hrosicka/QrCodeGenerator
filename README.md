@@ -15,3 +15,8 @@ The only external dependency is the **`qrcode`** library, which can be installed
 ```bash
 pip install qrcode
 ```
+
+---
+
+## 📝 License
+This project is licensed under the MIT License
