@@ -1,6 +1,7 @@
 import qrcode
 from qrcode.constants import ERROR_CORRECT_L
 
+
 def generate_qr_code(data: str, filename: str = "qr_code.png"):
     """
     Generates a professional-looking QR code from the given data and saves it to a file.
@@ -33,6 +34,7 @@ def generate_qr_code(data: str, filename: str = "qr_code.png"):
     # 4. Save the image to the specified file
     img.save(filename)
     print(f"QR code successfully generated and saved as '{filename}'")
+
 
 # --- Execution Block ---
 
